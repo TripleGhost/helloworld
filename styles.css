@@ -1,9 +1,156 @@
-body {
-    color: aqua;
-    background-color: #545454;
-    border-radius: 20px;
-    margin: auto;
-    background-image: url(https://i.pinimg.com/originals/e0/22/ea/e022ea07812cede53aaeed1994a04eed.jpg);
-    background-repeat: none;
-    background-size: 300px 300px;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&display=swap');
+
+* {
+  box-sizing: border-box;
 }
+#card:hover {
+  transform: translate(0, -20px);
+  box-shadow: 0px 10px 40px 0 #ddd;
+}
+
+
+body {
+  margin: 0;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: auto;
+}
+
+
+h1, h2, h3, h4, h5, h6, #copyright {
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+a, span, p, button {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+/* Start HEADER */
+#header, #footer {
+  padding: 50px 0;
+}
+
+
+
+#header .container, #footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#menu .link, #socials .link {
+  text-decoration: none;
+  color: #000;
+  padding: 0 15px;
+}
+/* End HEADER */
+
+
+/* Start CONTENT */
+
+#welcome {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+
+#welcome .title {
+  font-size: 60px;
+  font-weight: normal;
+  width: 40%;
+  line-height: 100%;
+}
+
+
+#welcome .subtitle {
+  font-size: 70px;
+  font-weight: normal;
+  width: 35%;
+  color: #606060;
+}
+
+
+#welcome svg {
+  margin: 100px 0 0 0;
+}
+
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  border-bottom: 1px solid #000;
+  padding: 0 0 100px 0;
+}
+
+
+.project .info {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+
+.project .title {
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.project .description {
+  line-height: 24px;
+}
+
+
+.project .link {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+
+.project .image {
+  width: 50%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px 0 rgb(105 105 105);
+}
+
+
+#card {
+text-align: center;
+  width: 400px;
+  height: 400px;
+  max-width: 500px;
+  margin: 100px auto;
+  transition: all 0.5s;
+  box-shadow: 0 12px 30px 0 rgb(105 105 105);
+  border-radius: 20px;
+  background-image: url(http://seite1.ru/wp-content/uploads/2017/02/m176.jpg);
+}
+
+#card:hover {
+  transform: translate(0, -20px);
+  box-shadow: 0px 10px 40px 0 #ddd;
+}
+
+/* End CONTENT */
+
+
+/* Start FOOTER */
+#copyright {
+  color: #000;
+  font-weight: bold;
+}
+/* End FOOTER */
